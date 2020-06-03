@@ -83,8 +83,10 @@ void menu()
             break;
             case 3: break;
         }
+
+        // METODO UTILIZADO PARA MAC. ESO ES PARA EL USO DE getch();  ya que no es permitido en mac
          system ("\nread -n 1 -s -p \" Presione cualquier tecla para continuar. . \" \n");
-         system("clear");
+         system("clear"); // Este se usa para limpiar la pantalla en vez de system("cls");
     } while (opcion != 3);
 }
 
